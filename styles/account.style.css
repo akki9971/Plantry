@@ -1,0 +1,288 @@
+.my_account .card {
+  border: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+.my_account .card:hover {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.5);
+}
+@media all and (max-width: 768px) {
+  .my_account .card {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
+.input-field-wrapper {
+  width: 80%;
+  height: 70px;
+  position: relative;
+  /* border: 1px solid rgba(0, 0, 0, 0.9) */
+}
+.input-field-wrapper .input-field {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.input-field-wrapper .input-field .icon {
+  position: absolute;
+  bottom: 5px;
+}
+.input-field-wrapper .input-field .icon.cake.male {
+  left: 0.5rem;
+}
+.input-field-wrapper .input-field input {
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  background: transparent;
+  z-index: 5;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  caret-color: #009724;
+}
+.input-field-wrapper .label {
+  position: absolute;
+  display: block;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s;
+}
+/* only for myprofile section due to some changes */
+.my_profile .input-field-wrapper .input-field .label {
+  left: 1.5em;
+}
+.my_profile .input-field-wrapper .input-field input {
+  padding-left: 1.5em;
+}
+.my_profile .input-field-wrapper .input-field input[type="radio"] {
+  width: auto;
+  position: static;
+  margin: 0 5px 0 10px;
+}
+/* --- splitted inputs (with options)---- */
+.input-field-wrapper .input-field.splitted select {
+  width: 20%;
+  padding: 0 5px 1px 0;
+  text-align: right;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+.input-field-wrapper .input-field.splitted input {
+  width: 80%;
+}
+.input-field-wrapper .input-field.splitted .label {
+  left: 22%;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input-field-wrapper .input-field input:focus {
+  outline: none;
+}
+.input-field-wrapper .input-field input:focus + .label {
+  bottom: 30px;
+  color: red;
+  font-size: 12px;
+}
+.input-field-wrapper .input-field .label.valid {
+  bottom: 25px;
+  color: #009724;
+  font-size: 13px;
+}
+@media all and (max-width: 768px) {
+  .input-field-wrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .input-field-wrapper.btn {
+    margin-bottom: 10px !important;
+  }
+  .input-field-wrapper.btn button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.btn-orange {
+  color: #fff;
+  border-color: #fd9013;
+  background: #fd9013;
+}
+.btn-outline-orange {
+  color: #fd9013;
+  border-color: #fd9013;
+}
+.btn-outline-orange:hover {
+  color: #fff !important;
+  background-color: #fd9013;
+  border-color: #fd9013;
+}
+.gift_vouchers h6.buttons {
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 0;
+  background: transparent;
+  margin: 10px auto;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: rgba(240, 240, 240, 1);
+}
+
+.gift_vouchers .gift-btn {
+  color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  border: none;
+  height: 100%;
+  padding: 15px 0px;
+  width: 110px;
+  font-size: 14px;
+  font-weight: 500;
+  background-origin: 0 0;
+  transition: all 0.3s ease-in-out;
+}
+.gift_vouchers .gift-btn:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+.gift_vouchers .gift-btn.open {
+  background: #009740;
+  color: #fff;
+}
+.my_remainders select {
+  width: 80% !important;
+}
+.my_remainders .note-limit {
+  position: absolute;
+  right: 15%;
+  top: 2px;
+  font-size: 12px;
+  color: #fd9013;
+}
+.my_remainders .custom-btn {
+  all: unset;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.my_remainders .custom-btn.box {
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* max-width: fit-content; */
+  flex-direction: column;
+  background: #fff;
+  /* transform:rotate(90deg); */
+  display: none;
+  padding: 0;
+}
+.my_remainders .custom-btn.box.open {
+  display: flex;
+}
+.my_remainders .custom-btn.box .box-btn {
+  all: unset;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.my_remainders .custom-btn.box .box-btn:hover {
+  background: #fd9013;
+  color: #fff;
+}
+
+/* <==== authentication =====> */
+
+.authentication .input-field-wrapper {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.authentication .input-field-wrapper label.label {
+  font-size: 14px;
+  left: 0;
+}
+.authentication .input-field-wrapper .input-field input:focus {
+  border-bottom: 2px solid rgba(255, 0, 0, 0.6);
+}
+.authentication .input-field-wrapper .input-field input.validEmail {
+  border-bottom: 2px solid #009724;
+}
+.authentication
+  .input-field-wrapper
+  .input-field
+  input.validEmail
+  ~ label.label {
+  color: #009724;
+}
+.authentication .input-field-wrapper .validation {
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+}
+.authentication .input-field-wrapper .validation.edit {
+  cursor: pointer;
+}
+.authentication .logWithFG {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.divider {
+  display: none;
+}
+@media (max-width: 768px) {
+  .authentication .input-field-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+  .authentication .input-field-wrapper label.label {
+    left: 0;
+  }
+}
+@media (max-width: 576x) {
+  .logWithFG {
+    position: static;
+    margin-bottom: 20px;
+  }
+  .divider {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    line-height: 14px;
+  }
+  .divider::before,
+  .divider::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    width: 40%;
+  }
+  .divider::before {
+    left: 20px;
+  }
+  .divider::after {
+    right: 20px;
+  }
+}
+
+
+.need_help .card-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.need_help .card-content .action{
+  width: 80%;
+}

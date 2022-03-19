@@ -1,0 +1,117 @@
+.container {
+  padding: 2rem 0;
+  overflow: hidden;
+  /* background-color: rgb(240, 240, 240); */
+}
+.tabsLayout {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 3fr;
+}
+.tabs {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 5px 0 0px 5px;
+  overflow: hidden;
+}
+.userProfile {
+  background: #009d43;
+  color: #fff;
+  padding: 1.3em 1em !important;
+}
+.userProfile span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.tabs > li {
+  padding: 1em 1em;
+  /* margin: 0; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 14px;
+  /* transition: border 0.1s ease-in-out; */
+}
+.tabs > li:hover {
+  color: red;
+}
+/* .tabs > li:last-child {
+  border-bottom: none;
+} */
+.container a:hover {
+  color: red;
+  font-weight: 500;
+}
+
+.current {
+  background: rgb(240, 240, 240);
+  color: red;
+  font-weight: bold;
+  /* margin: 5px 0; */
+  border: none;
+  border-left: 3px solid red;
+  position: relative;
+}
+
+.content {
+  padding-left: 1.5em;
+  background: rgb(240, 240, 240);
+  
+}
+.Card {
+  /* padding: 20px; */
+  height: 100%;
+  padding: 15px 0;
+  overflow-y: auto;
+  background: rgb(240, 240, 240);
+  border: none;
+  /* margin-right: 5px; */
+}
+/* .Card .tabTwo ul li {
+  list-style-type: disc;
+  list-style: disc;
+} */
+
+/* width */
+.Card::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+.Card::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #009740;
+  border-radius: 5px;
+}
+
+/* Handle */
+.Card::-webkit-scrollbar-thumb {
+  background: #009740;
+  border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+  .container {
+  padding: 1rem 0;
+  overflow: visible;
+  }
+  .tabsLayout {
+    grid-template-columns: 1fr;
+    margin-left: 0 !important;
+    max-height: fit-content;
+  }
+  .content {
+    padding: 0;
+  }
+  .Card {
+  max-height: fit-content;
+  overflow-y: auto;
+  margin-right: auto;
+}
+}

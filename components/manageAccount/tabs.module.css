@@ -1,0 +1,102 @@
+.container {
+  padding: 2rem 1rem;
+  overflow: hidden;
+  background-color: rgb(240, 240, 240);
+}
+.tabsLayout {
+  display: grid;
+  width: 100vw;
+  max-height: 524px;
+  grid-template-columns: 1fr 4fr;
+}
+.tabs {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 5px 5px 2px 2px;
+  overflow: hidden;
+}
+.userProfile {
+  background: #009d43;
+  color: #fff;
+  padding: 1.3em 1em !important;
+}
+.userProfile span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.tabs > li {
+  padding: 1em 1em;
+  margin: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  /* transition: border 0.1s ease-in-out; */
+}
+.tabs > li:last-child {
+  border: none;
+}
+.container a:hover {
+  color: #009724;
+}
+
+.current {
+  background: rgb(240, 240, 240);
+  color: #009724;
+  font-weight: bold;
+  border: none;
+  border-left: 3px solid #009724;
+  position: relative;
+}
+
+.content {
+  padding: 0 1em;
+}
+.Card {
+  /* padding: 20px; */
+  max-height: 524px;
+  overflow-y: auto;
+  margin-right: 5px;
+}
+
+/* width */
+.Card::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+.Card::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #009740;
+  border-radius: 5px;
+}
+
+/* Handle */
+.Card::-webkit-scrollbar-thumb {
+  background: #009740;
+  border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+  .container {
+  padding: 1rem 0;
+  overflow: visible;
+  }
+  .tabsLayout {
+    grid-template-columns: 1fr;
+    margin-left: 0 !important;
+    max-height: fit-content;
+  }
+  .content {
+    padding: 0;
+  }
+  .Card {
+  max-height: fit-content;
+  overflow-y: auto;
+  margin-right: auto;
+}
+}

@@ -1,0 +1,28 @@
+
+.row {
+    height: max-content;
+}
+.stick-top {
+    position: sticky;
+    -webkit-position: sticky;
+    top: 70px;
+    left: 0;
+    
+}
+.glow-input {
+    border: 1px solid #ff9212;
+    border-radius: 4px;
+    transition: all 0.5s;
+    animation: glow 2s ease-in-out infinite;
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 0px 0px #ff9212;
+    }
+    50% {
+        box-shadow: 0 0 15px 0px #ff9212;
+    }
+    100% {
+        box-shadow: 0 0 0px 0px #ff9212;
+    }
+}

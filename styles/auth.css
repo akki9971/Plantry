@@ -1,0 +1,77 @@
+/* <==== authentication =====> */
+
+.authentication .input-field-wrapper {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.authentication .input-field-wrapper label.label {
+  font-size: 14px;
+  left: 0;
+}
+.authentication .input-field-wrapper .input-field input:focus {
+  border-bottom: 2px solid rgba(255, 0, 0, 0.6);
+}
+.authentication .input-field-wrapper .input-field input.validEmail {
+  border-bottom: 2px solid #009724;
+}
+.authentication
+  .input-field-wrapper
+  .input-field
+  input.validEmail
+  ~ label.label {
+  color: #009724;
+}
+.authentication .input-field-wrapper .validation {
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+}
+.authentication .input-field-wrapper .validation.edit {
+  cursor: pointer;
+}
+.authentication .logWithFG {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.divider {
+  display: none;
+}
+@media (max-width: 768px) {
+  .authentication .input-field-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+  .authentication .input-field-wrapper label.label {
+    left: 0;
+  }
+}
+@media (max-width: 576x) {
+  .logWithFG {
+    position: static;
+    margin-bottom: 20px;
+  }
+  .divider {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    line-height: 14px;
+  }
+  .divider::before,
+  .divider::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    width: 40%;
+  }
+  .divider::before {
+    left: 20px;
+  }
+  .divider::after {
+    right: 20px;
+  }
+}

@@ -1,0 +1,53 @@
+/* .track-comp {
+
+} */
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0px;
+}
+.trackComp input {
+    width: 200px;
+    margin-right: 20px;
+    padding: 10px 15px;
+    line-height: 1.5;
+    margin-top: 1px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 3px 0 rgba(0, 0, 0, 0.4)
+}
+.trackComp input:focus {
+    box-shadow: inset 0px 0px 6px 0 rgba(0, 0, 0, 0.4)
+}
+.errorMsg {
+    color: red;
+    font-size: 12px;
+    visibility: hidden;
+}
+.open {
+    visibility: visible;
+}
+.trackComp button {
+    width: 200px;
+    font-weight: 500;
+    /* margin-top: -3px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .trackComp input ,
+    .trackComp button {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .errorMsg {
+    display: none;
+}
+.open {
+    display: block;
+}
+    }

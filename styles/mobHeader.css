@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap");
+
+.mb-header {
+    padding: 1em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.menuNlogo,
+.multFuncs {
+    display: flex;
+    justify-content: space-between;
+}
+.menuNlogo > div {
+    padding-right: 1em;
+}
+.multFuncs > div {
+    padding-left: 1em;
+}
+.logo h6{
+  font-family: "Mea Culpa", cursive;
+  color: #fff;
+  font-size: 20px;
+
+}
+
+/* --- navigation menu ---- */
+.navbtn {
+    all: unset;
+}
+.navShade,
+.navsec {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* position: relative; */
+}
+.navsec {
+    width: 80vw;
+    height: 100vh;
+    background: white;
+    z-index: 10;
+    transition-delay: 0.1s;
+    transition: all 0.2s linear;
+    
+}
+.navShade{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0,0.7);
+    transition: all 0.3s ease;
+    z-index: 9;
+}
+.navShade.hide,
+.navsec.hide {
+    transform: translateX(-100%);
+}
+.navShade.open,
+.navsec.open {
+    transform: translateX(0);
+}
+
+
+.topSec {
+    background: #000;
+    opacity: 0.8;
+}
+.userSec {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 15px;
+    align-items: center;
+}
+.userSec .user span{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(210, 210, 210);
+    margin: 8px 0 0 15px;
+}
+.userSec .closeBtn {
+    all: unset;
+}
+.funBtns {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.funBtn {
+    color: #fff;
+    font-size: 14px;
+    width: calc(100%/3);
+    text-align: center;
+    padding: 8px 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.menu {
+    max-height: 80%;
+    overflow-y: auto;
+}
+.accordion-body.parent {
+    padding: 0;
+}
+.accordion-button.sbmenu {
+    padding-left: 30px;
+}
+.accordion-body.child {
+    padding-left: 30px;
+}
+.sbsbmenu {
+    padding-left: 20px;
+    list-style: none;
+}
+.sbsbmenu li{
+    padding: 10px 0;
+}
+
+
+/* --- manage section --- */
+
+.managebtn {
+    all: unset;
+}
+.manageShade,
+.managesec {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.managesec {
+    width: 70vw;
+    height: 74vh;
+    background: white;
+    z-index: 10;
+    transition-delay: 0.1s;
+    transition: all 0.2s linear;
+    
+}
+.manageShade{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0,0.7);
+    transition: all 0.3s ease;
+    z-index: 9;
+}
+.manageShade.hide,
+.managesec.hide {
+    transform: translateX(100%);
+}
+.manageShade.open,
+.managesec.open {
+    transform: translateX(0);
+}
+.manageMenu {
+    list-style: none;
+    padding-top: 20px;
+    
+}
+.manageMenu li {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.manageMenu .icon {
+    margin-right: 15px;
+}
+.manageMenu .text{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
